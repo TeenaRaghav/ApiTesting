@@ -23,14 +23,14 @@ public class ApiAutomationUsers {
 		System.out.println(response.getStatusCode());
 //		response.prettyPrint();
 	String Expectedemail = "Sincere@april.biz";
+//	get value
 	String Actualemail = response.jsonPath().get("email[0]");
 	System.out.println(Actualemail);
 	response.then().body("email[0]",equalTo(Expectedemail));
 	response.then().body("email[0]",startsWith("S"));
 	response.then().body("email[0]",endsWith("z"));
-	response.then().body("email[0]",containsString("z"));
+	response.then().body("email[0]",containsString("b"));
 	response.then().body("address.zipcode[0]",equalTo("92998-3874"));
-	response.then().body("address.city",hasItem("Howemouth1"));
 	response.then().body("address.city",hasItem("Howemouth1"));
 
 

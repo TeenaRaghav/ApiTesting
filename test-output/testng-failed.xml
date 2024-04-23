@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.restapi.ApiAutomationUsers">
+      <class name="com.training.restapi.ApiAutomation">
         <methods>
-          <include name="validateUser"/>
+          <include name="getData"/>
         </methods>
-      </class> <!-- com.training.restapi.ApiAutomationUsers -->
+      </class> <!-- com.training.restapi.ApiAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
