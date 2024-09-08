@@ -45,10 +45,10 @@ public class ApiAutomation {
 		headerData.put("token", token);
 		headerData.put("Content-Type", "application/json");
 		response = RestAssured.given().headers(headerData).get();
-		response.prettyPrint();
-//		List<Object> accountnos = response.jsonPath().get("accountno");
-//		for (Object accountno : accountnos) {
-//			System.out.println(accountno);
-//		}
+//		response.prettyPrint();
+		List<Object> accountnos = response.jsonPath().get("accountno");
+		for (Object accountno : accountnos) {
+			System.out.println(accountno);
+		}
 	}
 }
