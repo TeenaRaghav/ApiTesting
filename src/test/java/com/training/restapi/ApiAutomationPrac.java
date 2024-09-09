@@ -37,7 +37,9 @@ public class ApiAutomationPrac {
 	headerData.put("Content-Type", "application/json");
 	Response response = RestAssured.given().headers(headerData).get();
 	System.out.println(response.getStatusCode());
-//	response.prettyPrint();	
+//	response.prettyPrint();
+	
+	
 	}
 	
 	@Test
